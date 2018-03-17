@@ -1,0 +1,38 @@
+Name: LIYAO JIANG(1512446)
+Section#: EA1
+
+Name：XIAOLEI ZHANG（1515335）
+Section#：LBL A1
+
+This chatting program achieved arduino-to-arduino communication over an
+encrypted serial link in which the Diffie-Hellman shared secret protocol is used
+to establish a shared key. The two arduinos exchange keys automatically
+And it uses XOR encryption to encrypt the messages.
+Users can simply type to communicate safely.
+
+Accessories:
+*2 × Arduino Mega 2650 board.
+*n × Cables
+*1 x Resistor
+
+Wiring:
+* for the server arduino
+  connect PIN 13 to 5V through any resistor
+* for the client arduino
+  connect PIN 13 to GND
+* for both arduinos
+  GND <-> GND(connect to another Arduino board)
+  TX3 <-> RX3(connect to another Arduino board)
+  RX3 <-> TX3(connect to another Arduino board)
+--------------------------------------------------------
+
+HOW TO RUN CODE:
+1.Make sure both Arduino boards are properly connected
+2.Navigate to the directory contains all the .cpp and .h files
+ from the compressed zip and make sure they are in the same directory
+3.Enter command "make upload" at terminal to compile and upload the program
+4.When there is an issue with connection between the Arduino and the VM
+  Enter 'arduino-port-select' at terminal, enter '1' for twice
+5.Enter 'serial-mon' to run the code at terminal;
+6.The arduinos will automatically exchange the keys
+7.Begin Chat! press enter to go to next line
